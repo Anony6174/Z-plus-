@@ -1,0 +1,9 @@
+{"function": "solve", "cases": [
+  {"args": ["the cat and the hat and the bat", 2], "expected": ["the", "and"]},
+  {"args": ["", 3], "expected": []},
+  {"args": ["b a c", 2], "expected": ["a", "b"]},
+  {"args": ["Hello, hello! HELLO? world", 5], "expected": ["hello", "world"]},
+  {"args": ["one two two three three three", 0], "expected": []},
+  {"args": ["x1y2z x-y_z", 3], "expected": ["x", "y", "z"]},
+  {"args": ["apple banana apple cherry banana apple", 3], "expected": ["apple", "banana", "cherry"]}
+]}

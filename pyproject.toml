@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zplus"
+version = "1.0.0"
+description = "Structural plagiarism detection for Python submissions"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "matplotlib"]
+
+[project.scripts]
+zplus = "zplus.cli:main"
+
+[tool.setuptools]
+packages = ["zplus"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+extend-exclude = ["tests/fixtures", "data"]

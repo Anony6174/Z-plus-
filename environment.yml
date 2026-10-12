@@ -1,0 +1,13 @@
+name: zplus
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pytest
+  - pytest-cov
+  - matplotlib
+  - ruff
+  - black
+  - pip:
+      - -e .

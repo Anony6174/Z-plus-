@@ -1,0 +1,26 @@
+z-plus scan
+config: k=6 w=4 threshold=0.6 min_shared=3 max_df=0.3 min_match=8 ast=on
+files read: 6   skipped: 1   candidate pairs: 7   flagged: 2
+
+  #  file A     file B                 final  tiling  ast    jaccard
+  1  six/alice  six/copy1_L1_of_alice  1.000  1.000  1.000  1.000
+  2  six/carol  six/copy2_L2_of_carol  0.744  0.744  0.545  0.527
+
+Groups (rings):
+  1. six/alice, six/copy1_L1_of_alice   (weakest link 1.000)
+  2. six/carol, six/copy2_L2_of_carol   (weakest link 0.744)
+
+Matched regions (lines in A <-> lines in B, tokens):
+  1. six/alice <-> six/copy1_L1_of_alice
+     1-18 <-> 1-21  (156 tokens)
+  2. six/carol <-> six/copy2_L2_of_carol
+     2-6 <-> 1-5  (45 tokens)
+     7-8 <-> 9-11  (8 tokens)
+     9-12 <-> 16-19  (15 tokens)
+     12-19 <-> 19-30  (49 tokens)
+     23-25 <-> 34-36  (33 tokens)
+
+Skipped files:
+  six/tiny: too short to check
+
+A flag is a lead for a human reviewer, never a verdict.
